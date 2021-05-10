@@ -1,6 +1,10 @@
 # pdfprinter
 
 A new Flutter project.
+로컬PDF출력기능, text출력기능
+추가해야할 항목: 1차: 사용자 입력값을 프린트기능까지 구형
+             2차: 형싱에 맞게 변환과정
+             3차: 
 
 ## Getting Started
 
