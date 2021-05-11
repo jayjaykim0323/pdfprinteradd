@@ -25,11 +25,20 @@ class MyApp extends StatelessWidget {
   }
 
   Future<Uint8List> _generatePdf(PdfPageFormat format, String title) async {
-    //로컬 pdf파일출
+    //html 출력
+    await Printing.layoutPdf(
+        onLayout: (PdfPageFormat format) async => await Printing.convertHtml(
+              format: format,
+              html: //예제 html작성
+                  '<html><head> <title>example 1-2</title></head> <body> <H2>example 1-2</H2> <HR>example 1-2</body></html>',
+            ));
+    //로컬 pdf파일출력
+    /*
     String filepath = "pdf/test.pdf";
     final pdf = await rootBundle.load(filepath);
     await Printing.layoutPdf(onLayout: (_) => pdf.buffer.asUint8List());
-    //Text 출력
+     */
+    //Text 출
     //final pdf = pw.Document();
 /*
     pdf.addPage(
