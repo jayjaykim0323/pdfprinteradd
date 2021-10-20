@@ -32,15 +32,16 @@ class MyApp extends StatelessWidget {
               html: //예제 html작성
                   '<html><head> <title>example 1-2</title></head> <body> <H2>example 1-2</H2> <HR>example 1-2</body></html>',
             ));
+
     //로컬 pdf파일출력
-    /*
+
     String filepath = "pdf/test.pdf";
     final pdf = await rootBundle.load(filepath);
     await Printing.layoutPdf(onLayout: (_) => pdf.buffer.asUint8List());
-     */
-    //Text 출
-    //final pdf = pw.Document();
-/*
+
+    //Text 출력
+    /*
+    final pdf = pw.Document();
     pdf.addPage(
       pw.Page(
         pageFormat: format,
